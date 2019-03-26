@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../member';
+import { SKILLS } from '../mock-skills';
 import { MEMBERS } from '../mock-members';
 
 @Component({
@@ -10,6 +11,7 @@ import { MEMBERS } from '../mock-members';
 export class MembersComponent implements OnInit {
 
   members = MEMBERS;
+  skills = SKILLS;
 
   constructor() { }
 
