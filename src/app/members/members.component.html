@@ -13,6 +13,8 @@
   </tr>
   <tr *ngFor="let member of members">
     <td>{{member.name}}</td>
-    <td class="public"></td>
+    <td *ngFor="let skill of skills" class={{skill.category}}>
+      <div *ngIf="member.skills.includes(skill.id)">X</div>
+    </td>
   </tr>
 </table>
