@@ -3,7 +3,7 @@ table {
 }
 td {
     text-align: center;
-    padding: 10px 5px;
+    padding: 0px 0px;
     border: 1px solid #ccc;
 }
 th {
@@ -28,21 +28,44 @@ th.rotate > div > span {
     padding: 5px 10px;
 }
 
+.skill-box {
+    padding: 10px 5px;
+    background-clip: border-box;
+}
+
 .writing {
-    color: red
+    color: #305891
+}
+.writing.skill {
+    background-color: #305891;
 }
 .public {
-    color: blue
+    color: #0F81E8;
+}
+.public.skill {
+    background-color: #0F81E8;
 }
 .liason {
-    color: green
+    color: #FFA902;
+}
+.liason.skill {
+    background-color: #FFA902;
 }
 .research {
-    color: orange
+    color: #40D7D4;
+}
+.research.skill {
+    background-color: #40D7D4;
 }
 .action {
-    color: LightBlue
+    color: #FF6112;
+}
+.action.skill {
+    background-color: #FF6112;
 }
 .organizing {
-    color: Navy
+    color: #124452;
+}
+.organizing.skill {
+    background-color: #124452;
 }

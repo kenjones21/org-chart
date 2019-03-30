@@ -1,9 +1,4 @@
 <h2>Members</h2>
-<ul class="members">
-  <li *ngFor="let member of members">
-    <span class="badge">{{member.id}}</span> {{member.name}}
-  </li>
-</ul>
 <table>
   <tr>
     <th></th>
@@ -13,8 +8,9 @@
   </tr>
   <tr *ngFor="let member of members">
     <td>{{member.name}}</td>
-    <td *ngFor="let skill of skills" class={{skill.category}}>
-      <div *ngIf="member.skills.includes(skill.id)">X</div>
+    <td *ngFor="let skill of skills" class="skill">
+      <div *ngIf="member.skills.includes(skill.id)" class="{{skill.category}} skill skill-box">&nbsp;</div>
+      <div *ngIf="!member.skills.includes(skill.id)" class="{{skill.category}} skill-box">&nbsp;</div>
     </td>
   </tr>
 </table>
