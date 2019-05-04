@@ -1,16 +1,3 @@
 <h2>Members</h2>
-<table>
-  <tr>
-    <th></th>
-    <th *ngFor="let skill of skills" class="rotate {{skill.category}}">
-      <div><span>{{skill.name}}</span></div>
-    </th>
-  </tr>
-  <tr *ngFor="let member of members">
-    <td>{{member.name}}</td>
-    <td *ngFor="let skill of skills" class="skill">
-      <div *ngIf="member.skills.includes(skill.id)" class="{{skill.category}} skill skill-box">&nbsp;</div>
-      <div *ngIf="!member.skills.includes(skill.id)" class="{{skill.category}} skill-box">&nbsp;</div>
-    </td>
-  </tr>
-</table>
+
+<svg class="chart"></svg>
